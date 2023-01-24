@@ -84,7 +84,7 @@ class GenerateHoliday extends Command
 
             Log::error($e->getMessage());
 
-            return Command::ERROR;
+            return Command::FAILURE;
         }
     }
 
