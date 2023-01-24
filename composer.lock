@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b2ea54de00cf01b436698e690e735063",
+    "content-hash": "34a85165efdaeaffa0b2d46b7c77fe0d",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -370,6 +370,60 @@
                 }
             ],
             "time": "2022-08-10T22:54:19+00:00"
+        },
+        {
+            "name": "calendarific/php-calendarific",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/calendarific/php-calendarific.git",
+                "reference": "a6741ae6224e3df83f2e75791269ea3aeca9d9e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/calendarific/php-calendarific/zipball/a6741ae6224e3df83f2e75791269ea3aeca9d9e1",
+                "reference": "a6741ae6224e3df83f2e75791269ea3aeca9d9e1",
+                "shasum": ""
+            },
+            "require": {
+                "jedkirby/json": "0.1.0",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Calendarific\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Calendarific Team",
+                    "email": "hello@calendarific.com",
+                    "homepage": "https://calendarific.com"
+                }
+            ],
+            "description": "PHP library for Calendarific.com",
+            "homepage": "https://calendarific.com",
+            "keywords": [
+                "calendar",
+                "calendarific",
+                "calendarindex",
+                "date",
+                "holiday",
+                "holidays"
+            ],
+            "support": {
+                "issues": "https://github.com/calendarific/php-calendarific/issues",
+                "source": "https://github.com/calendarific/php-calendarific/tree/2.0.0"
+            },
+            "time": "2019-05-30T18:10:33+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -2083,6 +2137,45 @@
                 }
             ],
             "time": "2023-01-14T13:48:00+00:00"
+        },
+        {
+            "name": "jedkirby/json",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jedkirby/json.git",
+                "reference": "51df6cc9f38a38bb700146cda593b0eb52fd6efd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jedkirby/json/zipball/51df6cc9f38a38bb700146cda593b0eb52fd6efd",
+                "reference": "51df6cc9f38a38bb700146cda593b0eb52fd6efd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "Jedkirby\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "json"
+            ],
+            "support": {
+                "issues": "https://github.com/jedkirby/json/issues",
+                "source": "https://github.com/jedkirby/json/tree/0.1.0"
+            },
+            "time": "2019-04-17T15:37:39+00:00"
         },
         {
             "name": "jeroennoten/laravel-adminlte",
@@ -11605,5 +11698,5 @@
         "php": "^8.0.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }
