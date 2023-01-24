@@ -21,15 +21,17 @@ class Kernel extends ConsoleKernel
         $schedule->command('attendance:force-clockout')->everyMinute();
         // $schedule->command('reminder:clockin')->everyMinute();
 
+        $schedule->command('generate:holiday', ['--year' => today()->year])->yearlyOn(1, 1, '00:00');
+
         $settings = Setting::whereIn('key', ['date_reset_leave_quota'])->get(['key', 'value'])->keyBy('key')->transform(function ($setting) {
             return $setting->value;
         })->toArray();
-        if($settings['date_reset_leave_quota']) {
+        if ($settings['date_reset_leave_quota']) {
             $day = Carbon::parse($settings['date_reset_leave_quota'])->format('d');
             $month = Carbon::parse($settings['date_reset_leave_quota'])->format('m');
-            if(config('app.env') === 'local') {
+            if (config('app.env') === 'local') {
                 $schedule->command('leave:reset-quota')->cron('* * ' . $day . ' ' . $month . ' *');
-            }else{
+            } else {
                 $schedule->command('leave:reset-quota')->cron('1 0 ' . $day . ' ' . $month . ' *');
             }
         }
@@ -42,7 +44,7 @@ class Kernel extends ConsoleKernel
      */
     protected function commands()
     {
-        $this->load(__DIR__.'/Commands');
+        $this->load(__DIR__ . '/Commands');
 
         require base_path('routes/console.php');
     }
