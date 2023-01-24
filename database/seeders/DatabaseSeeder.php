@@ -31,7 +31,8 @@ class DatabaseSeeder extends Seeder
             PayrollComponentSeeder::class,
             ApprovalTypeSeeder::class,
             AttendanceShiftSeeder::class,
-            PphRangeRuleSeeder::class
+            PphRangeRuleSeeder::class,
+            HolidayCalendarSeeder::class,
         ]);
     }
 }
