@@ -30,7 +30,7 @@ class UpdateNoticeBoardRequest extends FormRequest
             'end' => 'required|after:start',
             'title' => 'required',
             'description' => 'required_if:type,description|nullable|string',
-            'file' => 'nullable|file',
+            'file' => 'nullable|file|mimes:pdf',
         ];
     }
 

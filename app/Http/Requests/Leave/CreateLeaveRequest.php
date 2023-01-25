@@ -29,7 +29,7 @@ class CreateLeaveRequest extends FormRequest
             'start_date' => 'required|date_format:Y-m-d',
             'end_date' => 'required|date_format:Y-m-d|after:start_date',
             'reason' => 'required|string',
-            'file' => 'required|file|max:3072'
+            'file' => 'required|file|max:3072|mimes:jpg,jpeg,png,pdf'
         ];
     }
 }

@@ -24,11 +24,11 @@ class ValidateBasicInfoRequest extends FormRequest
     public function rules()
     {
         if($this->action === 'update'){
-            $pictureRule = 'nullable|file|max:3072';
+            $pictureRule = 'nullable|file|max:3072|mimes:jpg,jpeg,png';
             $phoneNumberRule = 'required|string|unique:employees,id,' . $this->id;
             $emailRule = 'required|email|unique:users,email,' . $this->user_id;
         }else{
-            $pictureRule = 'required|file|max:3072';
+            $pictureRule = 'required|file|max:3072|mimes:jpg,jpeg,png';
             $phoneNumberRule = 'required|string|unique:employees';
             $emailRule = 'required|email|unique:users';
         }

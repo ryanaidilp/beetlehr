@@ -28,7 +28,7 @@ class CreateResignRequest extends FormRequest
             'date' => 'required|date_format:Y-m-d',
             'end_contract' => 'required|date_format:Y-m-d|after:date',
             'reason' => 'required|string',
-            'file' => 'required|file|max:3072'
+            'file' => 'required|file|max:3072|mimes:jpg,jpeg,png,pdf'
         ];
     }
 }

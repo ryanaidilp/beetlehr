@@ -30,7 +30,7 @@ class CreateNoticeBoardRequest extends FormRequest
             'end' => 'required|after:start',
             'title' => 'required',
             'description' => 'required_if:type,description|nullable|string',
-            'file' => 'required_if:type,document|nullable|file',
+            'file' => 'required_if:type,document|nullable|file|mimes:pdf',
         ];
     }
 

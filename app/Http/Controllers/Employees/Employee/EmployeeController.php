@@ -156,7 +156,7 @@ class EmployeeController extends AdminBaseController
         }
     }
 
-    public function createEmployee(Request $request)
+    public function createEmployee(ValidateBasicInfoRequest $request)
     {
         try {
             DB::beginTransaction();
@@ -171,7 +171,7 @@ class EmployeeController extends AdminBaseController
         }
     }
 
-    public function updateEmployee($id, Request $request)
+    public function updateEmployee($id, ValidateBasicInfoRequest $request)
     {
         try {
             DB::beginTransaction();
