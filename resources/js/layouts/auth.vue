@@ -1,5 +1,5 @@
 <script setup>
-import VNotification from "@/components/VNotification/Index.vue";
+import VNotification from "@/components/VNotification/index.vue";
 </script>
 
 <template>

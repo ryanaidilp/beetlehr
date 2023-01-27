@@ -6,7 +6,7 @@ import { array } from "vue-types";
 import { usePage } from "@inertiajs/inertia-vue3";
 import VSidebar from "@/components/VSidebar/index.vue";
 import VHeader from "@/components/VHeader/index.vue";
-import VNotification from "@/components/VNotification/Index.vue";
+import VNotification from "@/components/VNotification/index.vue";
 
 const sidebarOpen = ref(true);
 const user = computed(() => usePage().props.value.admin_data)
