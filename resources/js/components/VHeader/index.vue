@@ -1,5 +1,5 @@
 <script setup>
-import UserMenu from '@/components/VDropdownProfile/index.vue';
+import UserMenu from '@/components/VDropdownProfile/index.vue'
 import { bool, object, array } from 'vue-types';
 
 const props = defineProps({
