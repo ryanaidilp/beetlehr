@@ -26,7 +26,7 @@ const props = defineProps({
                     </button>
                     <!-- <SearchForm /> -->
                 </div>
-                <div class="flex items-center space-x-2 w-[151px] h-[32px]">
+                <div class="flex items-center justify-end space-x-2 w-[151px] h-[32px]">
                     <UserMenu align="left" @logout-click="$emit('logout')" :user="user" :userRole="userRole"/>
                 </div>
             </div>
