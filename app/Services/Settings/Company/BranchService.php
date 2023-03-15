@@ -23,8 +23,7 @@ class BranchService
 
     public function storeBranch($request)
     {
-        $input = $request->only(['name', 'address', 'city', 'state', 'zip_code', 'latitude', 'longitude', 'radius', 'timezone', 'telegram_chat_id', 'radius_tracker', 'npwp_list_id']);
-        $input['tracker_interval'] = $request->tracker_interval['hours'] . ':' . $request->tracker_interval['minutes'] . ':00';
+        $input = $request->only(['name', 'address', 'city', 'state', 'zip_code', 'latitude', 'longitude', 'radius', 'timezone', 'npwp_list_id']);
 
         $branch = Branch::create($input);
 
@@ -33,8 +32,7 @@ class BranchService
 
     public function updateBranch($id, $request)
     {
-        $input = $request->only(['name', 'address', 'city', 'state', 'zip_code', 'latitude', 'longitude', 'radius', 'timezone', 'telegram_chat_id', 'radius_tracker', 'npwp_list_id']);
-        $input['tracker_interval'] = $request->tracker_interval['hours'] . ':' . $request->tracker_interval['minutes'] . ':00';
+        $input = $request->only(['name', 'address', 'city', 'state', 'zip_code', 'latitude', 'longitude', 'radius', 'timezone', 'npwp_list_id']);
 
         $branch = Branch::findOrFail($id);
         $branch->update($input);
