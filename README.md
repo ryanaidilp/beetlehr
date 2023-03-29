@@ -41,7 +41,7 @@ Password: rahasia123
 - Laravel 9 - PHP Framework for building the admin dashboard and mobile api.
 - VueJS 3 - The Progressive JavaScript Framework integrated with laravel and inertia.
 - Tailwind CSS. 
-- Flutter for Mobile App (you could find the repo at https://github.com/beetlehr/beetlehr-mobile)
+- Flutter for Mobile App (if you want the repo, you could send me email at ariaseta@koding.co.id)
 
 ## Documentation 
 If you want to know how to install this app, please refer to this [Installation Guide](./installation.md)  
